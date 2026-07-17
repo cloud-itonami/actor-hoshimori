@@ -82,3 +82,13 @@ hoshimori (orbital congestion → stewardship). All three are chokepoint/concent
 routed to resilience, never target-lists. The seed surfaces **LEO-low** as the top congestion
 concentrator (megaconstellation + debris band) and **PNT-on-MEO** as a top service-dependency
 fragility — both routed to deconfliction and active-debris-removal, never to harm.
+## Standalone multirepo contract
+
+- `manifest.edn` is the canonical actor manifest; JSON is compatibility data only.
+- Generic publication invariants come from the SHA-pinned
+  `com.etzhayyim/social-publication` dependency.
+- IE-flow metrics, gates, and scoring come from the SHA-pinned
+  `com.etzhayyim/ie-flow` dependency, which pins `com.etzhayyim/kotoba-datom` transitively.
+- Source and tests use `src/hoshimori`, `test/hoshimori`, and repository-local data paths. Do not restore
+  `20-actors`, `70-tools`, or superproject-relative classpaths.
+- Run `./run_tests.sh` from a standalone checkout before committing.
