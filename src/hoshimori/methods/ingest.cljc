@@ -167,7 +167,7 @@
        "CLI entry (file/network I/O at the edge). Mirrors ingest.py main(argv)."
        [& argv]
        (let [argv   (vec argv)
-             here   (-> *file* io/file .getParentFile .getParentFile)
+             here   (io/file (System/getProperty "user.dir"))
              seed   (io/file here "data" "seed-orbit-graph.kotoba.edn")
              out    (io/file here "data" "orbit-catalog.merged.kotoba.edn")
              ingest (io/file here "data" "ingest")

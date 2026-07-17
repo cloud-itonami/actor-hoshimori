@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; hoshimori 星守 — tests for the stewardship-gap (congested-but-unaddressed shells).
-;; Run:  bb --classpath 20-actors 20-actors/hoshimori/tests/test_stewardship_gap.cljc
+;; Run:  bb --classpath 20-actors tests/test_stewardship_gap.cljc
 (ns hoshimori.tests.test-stewardship-gap
   "Tests for stewardship-gap — orbital shells that are congested yet have NO remediation /
   deconfliction / deorbit edge (where stewardship is MISSING, not merely where congestion is high).

@@ -22,7 +22,7 @@
             [clojure.java.io :as io]
             [hoshimori.methods.analyze :as analyze]))
 
-(def actor-dir (-> *file* io/file .getParentFile .getParentFile))
+(def actor-dir (io/file (System/getProperty "user.dir")))
 (def seed (io/file actor-dir "data" "seed-orbit-graph.kotoba.edn"))
 
 (defn load-seed [] (analyze/load-file* seed))

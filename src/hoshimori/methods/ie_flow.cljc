@@ -22,7 +22,7 @@
             [etzhayyim.ie-flow.metrics :as iem]
             [clojure.string :as str]))
 
-(def default-seed "20-actors/hoshimori/data/seed-orbit-graph.kotoba.edn")
+(def default-seed "data/seed-orbit-graph.kotoba.edn")
 
 (defn- bearer-rows
   "Per-bearer rows: raw inbound hazard load (volume — scattered orbital crowding) +

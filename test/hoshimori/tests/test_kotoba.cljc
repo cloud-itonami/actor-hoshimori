@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; hoshimori 星守 — orbital-stewardship-ledger persistence + heartbeat tests.
-;; Run:  bb --classpath 20-actors 20-actors/hoshimori/tests/test_kotoba.cljc
+;; Run:  bb --classpath 20-actors tests/test_kotoba.cljc
 (ns hoshimori.tests.test-kotoba
   (:require [hoshimori.methods.kotoba :as k]
             [hoshimori.methods.autorun :as auto]
