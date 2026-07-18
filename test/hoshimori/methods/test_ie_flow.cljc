@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; hoshimori — ie-flow embedding tests (the SoS scoring leg).
-;; Run:  bb -cp "20-actors:70-tools/src:20-actors/kotodama/src" methods/test_ie_flow.cljc
+;; Run through the standalone repository task: bb test
 (ns hoshimori.methods.test-ie-flow
   (:require [hoshimori.methods.analyze :as an]
             [hoshimori.methods.ie-flow :as ief]

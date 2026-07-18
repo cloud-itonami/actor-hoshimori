@@ -1,5 +1,5 @@
 ;; hoshimori 星守 — seed orbital graph (real, PUBLIC regimes / operators / hazards / services)
-;; ADR-2606073600 · vocabulary: orbit-ontology (00-contracts/schemas/orbit-ontology.kotoba.edn)
+;; ADR-2606073600 · vocabulary: schema/orbit-ontology.edn
 ;;
 ;; SCOPE GUARD (constitutional, G1 — read first):
 ;;   - hoshimori is a STEWARDSHIP / orbital-sustainability map, NEVER a targeting / interception

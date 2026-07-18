@@ -1,0 +1,8 @@
+{:schema/version 1
+ :canonical :edn
+ :required ["actor.edn" "identity.edn" "manifest.edn" "kotoba.app.edn"
+            "dependencies.edn" "schema/orbit-ontology.edn"
+            "data/seed-orbit-graph.kotoba.edn"]
+ :wire-json [".well-known/did.json"]
+ :forbidden-extensions [".go" ".sh" ".wasm"]
+ :forbidden-files ["go.mod" "go.sum" "manifest.jsonld"]}

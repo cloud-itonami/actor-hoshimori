@@ -1,0 +1,16 @@
+{:schema/version 1
+ :dependencies
+ [{:id "com-etzhayyim-social-publication"
+   :url "https://github.com/etzhayyim/com-etzhayyim-social-publication.git"
+   :revision "e8127d0661284b1c12ce1b216c84b5ed2db619ab"
+   :kind :library}
+  {:id "com-etzhayyim-ie-flow"
+   :url "https://github.com/etzhayyim/com-etzhayyim-ie-flow.git"
+   :revision "35d36d912c9596dbc5094947b60202d9abdf61e6"
+   :kind :library}]
+ :integrates
+ [{:id "com-etzhayyim-asobi" :revision "87b4d9d169a32f3bcd39d8650e5bd5185b6eb094"}
+  {:id "com-etzhayyim-hokorobi" :revision "fc238df2bbaa282096bcdc838a5420501b620821"}
+  {:id "com-etzhayyim-inochi" :revision "2a48c15e52ad2a994de187d2204bcd6bdfe68f61"}
+  {:id "com-etzhayyim-watari" :revision "a4636a3702ec2394c00a8d49ac585df9f11f8586"}
+  {:id "com-etzhayyim-watatsuna" :revision "3c8c3713d85c4759929002ad1dae22c2c2e79659"}]}

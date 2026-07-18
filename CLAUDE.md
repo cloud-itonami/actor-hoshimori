@@ -44,18 +44,14 @@ It closes coverage-gap **B** of ADR-2606073000.
 ## Layout
 
 ```
-20-actors/hoshimori/
+com-etzhayyim-hoshimori/
 ├── CLAUDE.md                          # this file
-├── manifest.jsonld                    # actor manifest (3 cells, 8 gates)
+├── manifest.edn                       # canonical actor manifest (3 cells, 8 gates)
+├── schema/orbit-ontology.edn          # actor-owned canonical vocabulary
 ├── data/
 │   └── seed-orbit-graph.kotoba.edn    # real PUBLIC regimes/operators/hazards/services + 縁
-├── methods/                           # pure-stdlib (no numpy) → kotoba pywasm-runnable
-│   ├── analyze.py                     # edge-primary congestion vs stewardship analyzer
-│   ├── datom_emit.py                  # kotoba Datom-log (EAVT) emitter — canonical state
-│   └── coverage_report.py             # honest coverage + gap map (G5)
-├── tests/                             # 9 tests, pure stdlib (incl. G1 no-ephemeris)
-│   ├── test_analyze.py
-│   └── test_coverage.py
+├── src/hoshimori/methods/             # portable Clojure/CLJS implementation
+├── test/hoshimori/                    # behavior and contract tests
 ├── wasm/
 │   └── README.md                      # kotoba pywasm actor (componentize-py) design
 └── out/                               # GENERATED — do not hand-edit
@@ -67,11 +63,7 @@ It closes coverage-gap **B** of ADR-2606073000.
 ## Run
 
 ```bash
-cd 20-actors/hoshimori
-python3 methods/analyze.py          # → out/congestion-report.md
-python3 methods/datom_emit.py       # → out/orbit-datoms.kotoba.edn (EAVT)
-python3 methods/coverage_report.py  # → out/coverage-report.md
-python3 tests/test_analyze.py && python3 tests/test_coverage.py   # 9 green
+bb test
 ```
 
 ## Cross-links
@@ -84,11 +76,12 @@ concentrator (megaconstellation + debris band) and **PNT-on-MEO** as a top servi
 fragility — both routed to deconfliction and active-debris-removal, never to harm.
 ## Standalone multirepo contract
 
-- `manifest.edn` is the canonical actor manifest; JSON is compatibility data only.
+- `manifest.edn`, repository metadata, schemas, and generated reports are canonical EDN.
+  JSON is limited to the DID wire document under `.well-known/`.
 - Generic publication invariants come from the SHA-pinned
   `com.etzhayyim/social-publication` dependency.
 - IE-flow metrics, gates, and scoring come from the SHA-pinned
   `com.etzhayyim/ie-flow` dependency, which pins `com.etzhayyim/kotoba-datom` transitively.
 - Source and tests use `src/hoshimori`, `test/hoshimori`, and repository-local data paths. Do not restore
   `20-actors`, `70-tools`, or superproject-relative classpaths.
-- Run `./run_tests.sh` from a standalone checkout before committing.
+- Run `bb test` from a standalone checkout before committing.

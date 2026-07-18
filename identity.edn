@@ -1,0 +1,6 @@
+{:repository/id "com-etzhayyim-hoshimori"
+ :repository/type :actor
+ :actor/id "hoshimori"
+ :actor/glyph "星守"
+ :canonical-format :edn
+ :wire-formats #{:json}}
