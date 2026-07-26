@@ -4,8 +4,8 @@
    :url "https://github.com/etzhayyim/com-etzhayyim-social-publication.git"
    :revision "e8127d0661284b1c12ce1b216c84b5ed2db619ab"
    :kind :library}
-  {:id "com-etzhayyim-ie-flow"
-   :url "https://github.com/etzhayyim/com-etzhayyim-ie-flow.git"
+  {:id "kotoba-lang/ie-flow"
+   :url "https://github.com/kotoba-lang/ie-flow.git"
    :revision "35d36d912c9596dbc5094947b60202d9abdf61e6"
    :kind :library}]
  :integrates
