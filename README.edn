@@ -1,0 +1,11 @@
+{:repo/id "cloud-itonami/actor-hoshimori"
+ :repo/plane :role
+ :repo/role :governed-executable-actor
+ :repo/execution :on-demand
+ :actor/id :hoshimori
+ :actor/identity "did:web:etzhayyim.com:actor:hoshimori"
+ :repo/boundary {:subject :orbital-stewardship-observatory
+                 :effects :observation-only
+                 :forbidden [:precise-predictive-ephemeris :spacecraft-operation :targeting]
+                 :does-not-own [:etzhayyim-charter :etzhayyim-council :organism-state]
+                 :compatibility-repository "etzhayyim/com-etzhayyim-hoshimori"}}

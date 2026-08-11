@@ -1,5 +1,8 @@
 # hoshimori 星守 — off-Earth / orbital (軌道) stewardship mirror
 
+Canonical repository: `cloud-itonami/actor-hoshimori`. It is a Cloud Itonami
+observation actor; historical etzhayyim identities remain compatible aliases.
+
 **ADR**: 2606073600 · **depends**: 2606073000 (inochi) + 2606073200 (asobi) + 2606073400
 (hokorobi — sibling pattern) · 2605192330 (orbital land-sovereignty claim) · 2606041827
 (watari — live ship/aircraft KG) · 2606012600 (watatsuna — cable chokepoints) · 2605312345

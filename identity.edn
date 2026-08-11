@@ -1,6 +1,7 @@
-{:repository/id "com-etzhayyim-hoshimori"
+{:repository/id "cloud-itonami/actor-hoshimori"
  :repository/type :actor
  :actor/id "hoshimori"
  :actor/glyph "星守"
  :canonical-format :edn
- :wire-formats #{:json}}
+ :wire-formats #{:json}
+ :compatibility-repository "etzhayyim/com-etzhayyim-hoshimori"}
