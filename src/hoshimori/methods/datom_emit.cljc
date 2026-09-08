@@ -16,7 +16,7 @@
 
   House style (mirrors analyze.cljc): Python ':…' keyword strings stay strings; node ids /
   edge ids / endpoint ids are quoted strings; pure fns; file I/O only at edges. Portable .cljc."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [hoshimori.methods.analyze :as analyze]))
 
 ;; ── attribute allow-lists (mirror NODE_ATTRS / EDGE_ATTRS in datom_emit.py) ──

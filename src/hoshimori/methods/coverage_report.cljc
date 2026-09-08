@@ -8,7 +8,7 @@
   makes the covered regime/hazard backbone measurable and names the next wave.
 
   Pure fns; reuses hoshimori.methods.analyze for the loader. Portable .cljc."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [hoshimori.methods.analyze :as analyze]))
 
 ;; honest external denominators for the OBJECT count (we model shells, not objects — by design)

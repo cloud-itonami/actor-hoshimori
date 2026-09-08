@@ -14,7 +14,7 @@
   emit in EDN-read order (node-ids) + edges content-stable → resume-safe. IDEMPOTENT-BY-CONTENT:
   a beat whose ground datoms equal the previous beat's is a NO-OP. No-server-key: appends to a
   local file only, no network I/O. G1: a STEWARDSHIP map (shell-aggregate), never a targeting aid."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [hoshimori.methods.analyze :as analyze]
             [hoshimori.methods.datom-emit :as de]
             [hoshimori.methods.kotoba :as k]

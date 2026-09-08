@@ -10,7 +10,7 @@
   (The five pure-analyze assertions live in tests/test_analyze.cljc; this unit covers the
   datom_emit sibling, mirroring the inochi/asobi/hokorobi precedent.)"
   (:require [clojure.test :refer [deftest is testing run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [hoshimori.methods.analyze :as analyze]
             [hoshimori.methods.datom-emit :as datom-emit]))
