@@ -1,6 +1,6 @@
 (require '[clojure.edn :as edn]
          '[clojure.java.io :as io]
-         '[clojure.string :as str]
+         '[kotoba.lang.text :as str]
          '[clojure.test :as t]
          'hoshimori.methods.test-datom-emit
          'hoshimori.methods.test-ie-flow
