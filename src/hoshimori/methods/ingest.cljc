@@ -20,7 +20,7 @@
 
   House style (mirrors analyze.cljc / datom_emit.cljc): pure fns; Python ':…' keyword
   strings stay strings; file/network I/O only at the edge in `#?(:clj -main)`. Portable .cljc."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def satcat-url "https://celestrak.org/pub/satcat.csv")
 
@@ -109,7 +109,7 @@
 (defn emit-operator
   "Port of emit_operator: one per-owner aggregate node EDN string (counts only)."
   [code agg]
-  (let [[slug label juris] (get owner code [(-> code str/lower-case (str/replace "/" "-")) code code])]
+  (let [[slug label juris] (get owner code [(-> code str/lower (str/replace "/" "-")) code code])]
     (str "{:organism/id \"orbit.cat." slug "\" :organism/kind :operator :organism/label "
          (s (str label " (cataloged objects)")) " "
          ":op/kind :catalog-owner :op/jurisdiction \"" juris "\" :op/object-count " (:total agg) " "
@@ -121,7 +121,7 @@
   [reg n]
   (let [bare (str/replace reg #"^:+" "")]
     (str "{:organism/id \"orbit.occ." bare "\" :organism/kind :occupancy :organism/label "
-         (s (str "On-orbit occupancy " (str/upper-case bare))) " "
+         (s (str "On-orbit occupancy " (str/upper bare))) " "
          ":occ/regime " reg " :occ/on-orbit-count " n " :organism/sourcing :authoritative}")))
 
 (defn merge-graph

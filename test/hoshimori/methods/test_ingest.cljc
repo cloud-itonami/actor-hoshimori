@@ -3,7 +3,7 @@
   The Python ingest.py shipped without a unit test; this locks the pure-fn
   behavior of the cljc port, incl. the G1 no-ephemeris invariant on its output."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.edn :as edn]
             [hoshimori.methods.ingest :as ing]))
 

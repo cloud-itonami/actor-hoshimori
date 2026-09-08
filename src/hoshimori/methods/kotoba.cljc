@@ -23,7 +23,7 @@
   appends to a local file. G1: the ledger is a STEWARDSHIP map (orbital sustainability),
   NEVER a targeting / interception aid — shell/regime-AGGREGATE only, NO precise
   predictive ephemeris (no per-object lat/lon/alt/velocity/TLE), ASAT unrepresentable."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])

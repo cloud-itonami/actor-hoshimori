@@ -4,7 +4,7 @@
 (ns hoshimori.tests.test-kotoba
   (:require [hoshimori.methods.kotoba :as k]
             [hoshimori.methods.autorun :as auto]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]))
 
