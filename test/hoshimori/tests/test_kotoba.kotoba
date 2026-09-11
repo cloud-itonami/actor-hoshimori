@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori 星守 — orbital-stewardship-ledger persistence + heartbeat tests.
 ;; Run through the standalone repository task: bb test
 (ns hoshimori.tests.test-kotoba

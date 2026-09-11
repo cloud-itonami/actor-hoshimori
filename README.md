@@ -9,4 +9,4 @@ predictive ephemeris and operates no spacecraft. It owns no etzhayyim Charter,
 Council, or organism state. Existing DID, namespace, Radicle identity, and old
 GitHub URL remain compatibility identities.
 
-Run `bb test` for the executable contract suite.
+Run `kbb -M:test` for the executable contract suite.

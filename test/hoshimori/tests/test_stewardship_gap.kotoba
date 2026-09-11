@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori 星守 — tests for the stewardship-gap (congested-but-unaddressed shells).
 ;; Run through the standalone repository task: bb test
 (ns hoshimori.tests.test-stewardship-gap
