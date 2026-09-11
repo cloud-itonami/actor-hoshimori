@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori 星守 — ie-flow embedding (the SoS scoring leg) via the shared gate-adapter.
 (ns hoshimori.methods.ie-flow
   "ie_flow.cljc — hoshimori 星守 embeds the information-energy flow lifecycle (etzhayyim.ie-flow,

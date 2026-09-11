@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori 星守 — autonomous heartbeat: load the orbit graph → append GROUND datoms.
 (ns hoshimori.methods.autorun
   "autorun.cljc — hoshimori 星守 deterministic heartbeat (ADR-2606073600, inochi/asobi pattern).

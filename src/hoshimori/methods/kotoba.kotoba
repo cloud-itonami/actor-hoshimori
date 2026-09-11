@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori 星守 — orbital-stewardship graph DATOM-LOG writer (content-addressed commit-DAG).
 (ns hoshimori.methods.kotoba
   "kotoba.cljc — hoshimori 星守 append-only ORBITAL-STEWARDSHIP LEDGER writer

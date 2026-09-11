@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hoshimori — ie-flow embedding tests (the SoS scoring leg).
 ;; Run through the standalone repository task: bb test
 (ns hoshimori.methods.test-ie-flow

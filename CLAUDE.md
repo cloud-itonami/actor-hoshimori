@@ -66,7 +66,7 @@ com-etzhayyim-hoshimori/
 ## Run
 
 ```bash
-bb test
+kbb -M:test
 ```
 
 ## Cross-links
@@ -87,4 +87,4 @@ fragility — both routed to deconfliction and active-debris-removal, never to h
   `com.etzhayyim/ie-flow` dependency, which pins `com.etzhayyim/kotoba-datom` transitively.
 - Source and tests use `src/hoshimori`, `test/hoshimori`, and repository-local data paths. Do not restore
   `20-actors`, `70-tools`, or superproject-relative classpaths.
-- Run `bb test` from a standalone checkout before committing.
+- Run `kbb -M:test` from a standalone checkout before committing.
