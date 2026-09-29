@@ -48,7 +48,7 @@ It closes coverage-gap **B** of ADR-2606073000.
 
 ```
 com-etzhayyim-hoshimori/
-├── CLAUDE.md                          # this file
+├── AGENTS.md                          # this file
 ├── manifest.edn                       # canonical actor manifest (3 cells, 8 gates)
 ├── schema/orbit-ontology.edn          # actor-owned canonical vocabulary
 ├── data/
