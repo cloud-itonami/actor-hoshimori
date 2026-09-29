@@ -7,4 +7,4 @@
           ["schema" "schema"]
           ["manifest.edn" "manifest.edn"]
           [".well-known/did.json" "did.json"]
-          ["CLAUDE.md" "CLAUDE.md"]]}
+          ["AGENTS.md" "AGENTS.md"]]}
